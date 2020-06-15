@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#f6f6f6"
+    >
+
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"
+        android:id="@+id/shangpinliebiao_search_serch"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:background="#00ffffff"
+        android:layout_width="wrap_content"
+        android:layout_weight="7"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/search"
+        android:gravity="center_vertical"
+       android:hint="商品名称、编号、条形码"
+       android:drawablePadding="10dp"
+        android:drawableRight="@mipmap/scan"
+        />
+
+    <View
+        android:layout_toLeftOf="@+id/shangpinliebiao_search_back"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:background="#d4d4d4"/>
+
+
+
+    <ImageButton
+        android:layout_centerVertical="true"
+        android:id="@+id/shangpinliebiao_search_back"
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/serch_back_btn"
+        android:background="?android:attr/selectableItemBackground"/>
+
+</RelativeLayout>

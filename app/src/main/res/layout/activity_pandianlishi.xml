@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.qunxin.erp.activity.ShangpinliebiaoActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorTitle"
+        >
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageButton
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back_btn"
+                android:background="#0000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="盘点历史"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:drawableBottom="@null"/>
+        </LinearLayout>
+
+
+
+        <ImageButton
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/add_btn"
+            android:background="#0000"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"/>
+
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/serch_white"
+            android:background="#0000"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <!--
+    <FrameLayout
+        android:id="@+id/shangpinliebiao_fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f6f6f6">
+    </FrameLayout>
+    -->
+
+    <RelativeLayout
+        android:id="@+id/jiesuo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="盘点后解锁仓库"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:paddingLeft="20dp"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrey"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp">
+
+        </View>
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/cangkulock"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:background="@color/colorQian"
+
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+        </ListView>
+
+        <ImageView
+            android:id="@+id/nodatusImage"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/nodatus"/>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/loading"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_centerHorizontal="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+
+            <TextView
+                android:layout_below="@+id/progress"
+                android:gravity="center"
+                android:text="正在努力加载中..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

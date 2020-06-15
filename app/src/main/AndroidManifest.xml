@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.qunxin.erp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 摄像头权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- 自动聚焦权限 -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/NoTitle">
+        <activity android:name=".activity.FirstAcitvity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.PersonalInfoActivity" />
+        <activity android:name=".activity.SettingsActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity
+            android:name=".activity.BaseDatusActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.ShangpinliebiaoActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.AddShangpinActivity" />
+        <activity android:name=".activity.XuanzefengleiActivity" />
+        <activity android:name=".activity.XuanzegongyingshangfengleiActivity" />
+        <activity android:name=".activity.UnitActivity" />
+        <activity android:name=".activity.GuigeshuxingActivity" />
+        <activity android:name=".activity.KucunyujingActivity" />
+        <activity android:name="com.google.zxing.activity.CaptureActivity" />
+        <activity android:name=".activity.XuanzegongyingshangActivity" />
+        <activity android:name=".activity.AddShangpinSuccessActivity" />
+        <activity android:name=".activity.ShangpinxiangqingActivity" />
+        <activity android:name=".activity.EditShangpinActivity" />
+        <activity android:name=".activity.EditShangpinTypeActivity" />
+        <activity android:name=".activity.PrintTagActivity" />
+        <activity android:name=".activity.JiesuanzhanghuActivity" />
+        <activity android:name=".activity.AddZhanghuActivity" />
+        <activity android:name=".activity.ZhanghuxiangqingActivity" />
+        <activity android:name=".activity.EditZhanghuActivity" />
+        <activity android:name=".activity.AddCangkuActivity" />
+        <activity android:name=".activity.CangkuxiangqingActivity" />
+        <activity android:name=".activity.EditCangkuActivity" />
+        <activity android:name=".activity.CangkuliebiaoActivity" />
+        <activity android:name=".activity.QichuInfoActivity" />
+        <activity
+            android:name=".activity.QichuyingshouqiankuanActivity"
+            android:theme="@style/ThemeNoActionBar" />
+        <activity android:name=".activity.QichuyinshouqiankuanSearchActivity" />
+        <activity android:name=".activity.QichushangpinkucunActivity" />
+        <activity android:name=".activity.QichushangpinkucunSearchActivity" />
+        <activity android:name=".activity.QichuyingfuqiankuanActivity" />
+        <activity android:name=".activity.QichuyingfuqiankuanSearchActivity" />
+        <activity android:name=".activity.QichuzhanghuyueActivity" />
+        <activity android:name=".activity.QichuzhanghuyueSearchActivity" />
+        <activity android:name=".activity.KehuxiangqingActivity" />
+        <activity android:name=".activity.EditKehuActivity" />
+        <activity android:name=".activity.AddKehuActivity" />
+        <activity android:name=".activity.AddGongyingshangActivity" />
+        <activity android:name=".activity.GongyingshangXiangqingActivity" />
+        <activity android:name=".activity.EditGongyingshangActivity" />
+        <activity
+            android:name=".activity.CaigoudingdanActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.AddCaigoudingdanSuccessActivity" />
+        <activity android:name=".activity.AddCaigoudingdanAfterActivity" />
+        <activity android:name=".activity.CaigoudingdanxiangqingWeicaigouActivity" />
+        <activity android:name=".activity.CaigoudingdanquerenActivity" />
+        <activity android:name=".activity.CaigoumingxidanActivity" />
+        <activity android:name=".activity.CaigoumingxidanqurenActivity" />
+        <activity android:name=".activity.AddCaigoudingdanActivity" />
+        <activity android:name=".activity.AddJinhuodanXuanzeshangpinActivity" />
+        <activity android:name=".activity.AddjinhuoActivity" />
+        <activity android:name=".activity.JinhuodanXiangqiangActivity" />
+        <activity android:name=".activity.AddjinhuodanSuccessActivity" />
+        <activity android:name=".activity.XuanzeCangkuActivity" />
+        <activity
+            android:name=".activity.AddJinhuoAfterActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.AddjinhuoYixuanshangpinActivity" />
+        <activity android:name=".activity.EditYixuanshangpinActivity" />
+        <activity android:name=".activity.XuanZeZhanghuActivity" />
+        <activity
+            android:name=".activity.JinhuolishiActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.JinhuotuihuolishiActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.XuanzejinhuodanActivity" />
+        <activity
+            android:name=".activity.AddJinhuotuihuodanActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.XuanzeJinhuo_tuihuoshangpinActivity" />
+        <activity android:name=".activity.AddJinhuotuihuodanAfterActivity" />
+        <activity android:name=".activity.AddjinhuotuihuodanSuccessActivity" />
+        <activity android:name=".activity.AddJinhuotuihuoXuanzeshangpinActivity" />
+        <activity android:name=".activity.JinhuoTuihuodanxiangqingActivity" />
+        <activity android:name=".activity.AddCaigoudingdanEnterSuccessActivity" />
+        <activity android:name=".activity.CaigoudingdanxiangqingYicaigouActivity" />
+        <activity android:name=".activity.AddCaigoudingdanXuanzeshangpinActivity" />
+        <activity android:name=".activity.AddcaigouYixuanshangpinActivity" />
+        <activity android:name=".activity.AddCaigoudanEnterActivity" />
+        <activity android:name=".activity.AddCaigoudingdanEnterXuanzeshangpinActivity" />
+        <activity android:name=".activity.CaigouEnterShangpinxiangqingActivity" />
+        <activity android:name=".activity.RukulishiActivity" />
+        <activity android:name=".activity.RukulishixiangqingActivity" />
+        <activity android:name=".activity.RukushangpinxiangqingActivity" />
+        <activity android:name=".activity.RukulishiluruActivity" />
+        <activity android:name=".activity.RukulishiluruSuccessActivity" />
+        <activity
+            android:name=".activity.XiaoshoulishiActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.XiaoshoudanXiangqingActivity" />
+        <activity android:name=".activity.AddXiaoshoudanActivity" />
+        <activity android:name=".activity.AddXiaoshoudanAfterActivity" />
+        <activity android:name=".activity.AddXiaoshoudanSuccessActivity" />
+        <activity android:name=".activity.XuanzeKehuActivity" />
+        <activity android:name=".activity.AddXiaoshoudanXuanzeshangpinActivity" />
+        <activity
+            android:name=".activity.XiaoshoutuihuolishiActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.XuanzeXiaoshou_tuihuoshangpinActivity" />
+        <activity android:name=".activity.XiaoshoutuihuoXiangqingActivity" />
+        <activity android:name=".activity.AddXiaoshoutuihuodanActivity" />
+        <activity android:name=".activity.AddXiaoshoutuihuodanAfterActivity" />
+        <activity android:name=".activity.AddXiaoshoutuihuodanSuccessActivity" />
+        <activity android:name=".activity.XuanzexiaoshoudanActivity" />
+        <activity android:name=".activity.AddXiaoshoutuihuoxuznzeshangpinActivity" />
+        <activity
+            android:name=".activity.XiaoshoudingdanlishiActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.XiaoshoudingdanXiangqingActivity" />
+        <activity
+            android:name=".activity.PandianlishiActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.AddpandianActivity" />
+        <activity android:name=".activity.PandianCangkuXuanzeActivity" />
+        <activity android:name=".activity.CangkujiesuoActivity" />
+        <activity android:name=".activity.PandianxiangqingListActivity" />
+        <activity android:name=".activity.PandiandanXiangqingActivity" />
+        <activity android:name=".activity.PandianshangpinActivity" />
+        <activity android:name=".activity.AddPandianxuanzeshangpinActivity" />
+        <activity android:name=".activity.AddXiaoshoudingdanActivity" />
+        <activity android:name=".activity.AddXiaoshoudingdanXuanzeshangpinActivity" />
+        <activity android:name=".activity.AddXiaoshoudingdanAfterActivity" />
+        <activity android:name=".activity.AddXiaoshoudingdanSuccessActivity" />
+        <activity android:name=".activity.AddXiaoshoudingdanPeihuoSuccessActivity" />
+        <activity android:name=".activity.AddDingdanzhuanxiaoshouSuccessActivity" />
+        <activity android:name=".activity.AddPandiancangkuAfterActivity" />
+        <activity android:name=".activity.PandianlishiSearchActivity" />
+        <activity
+            android:name=".activity.DiaobolishiActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.DiaobodanxiangqingActivity" />
+        <activity android:name=".activity.AddDiaobodanActivity" />
+        <activity android:name=".activity.AddDiaobodanAfterActivity" />
+        <activity android:name=".activity.AdddiaoboxuanzeshangpinActivity" />
+        <activity android:name=".activity.AddDiaoboSuccessActivity" />
+        <activity android:name=".activity.ShangpinkucunActivity" />
+        <activity android:name=".activity.KucunchaxunActivity" />
+        <activity android:name=".activity.AddKuaijiegongnengActivity" />
+        <activity android:name=".activity.KucunchanxunXuanzeshangpinActivity"/>
+    </application>
+
+</manifest>

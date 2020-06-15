@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<swipedelete.view.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="#ffffff"
+    >
+
+    <!-- 第一个子view，显示ListView数据内容-->
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginBottom="3dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/item_index_item"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="85dp">
+
+
+            <TextView
+                android:drawablePadding="5dp"
+
+                android:id="@+id/listview_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:text="工商银行"
+                android:textSize="20sp" />
+
+            <TextView
+                android:textColor="#c2c2c2"
+                android:id="@+id/listview_tvInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/listview_tv"
+                android:text="银行名称"
+                android:textSize="17sp" />
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/item_jiesuanzhanghu_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listview_tv"
+                android:layout_toRightOf="@+id/listview_tvInfo"
+                android:text="工商银行"
+                android:textColor="#818181"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:textColor="#c2c2c2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/listview_tvInfo"
+                android:text="账户余额"
+                android:textSize="17sp" />
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/item_jiesuanzhanghu_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listview_tvInfo"
+                android:layout_toRightOf="@+id/listview_tvInfo"
+                android:text="￥123455.00"
+                android:textColor="#818181"
+                android:textSize="17sp"/>
+        </RelativeLayout>
+        <ImageView
+            android:layout_marginRight="20dp"
+            android:layout_width="18dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/backbtn_gry"
+            />
+    </LinearLayout>
+
+    <!-- 下面是侧滑菜单项 即：第2+个子view-->
+    <Button
+        android:id="@+id/btn_zd"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="#d9dee4"
+        android:text="置顶"
+        android:textColor="@android:color/white"/>
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="#F76E6B"
+        android:text="删除"
+        android:textColor="@android:color/white"/>
+
+</swipedelete.view.SwipeMenuLayout>

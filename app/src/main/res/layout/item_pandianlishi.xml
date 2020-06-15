@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/creatTime"
+        android:background="@color/colorGrey"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="66666"/>
+    <!-- 第一个子view，显示ListView数据内容-->
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/item_index_item"
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/danhao"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:drawablePadding="5dp"
+                android:text="马超"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/pandinacangku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/danhao"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:text="盘点仓库："
+                android:textColor="#c2c2c2"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/cangku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/danhao"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/pandinacangku"
+                android:text="仓库1"
+                android:textColor="#767676"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/pandianzhuantai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pandinacangku"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:text="盘点状态："
+                android:textColor="#c2c2c2"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pandinacangku"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/pandianzhuantai"
+                android:text="有盈亏"
+                android:textColor="#ff4646"
+                android:textSize="17sp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

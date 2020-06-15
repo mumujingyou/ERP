@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2ededed"
+
+    >
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorTitle"
+        >
+        <LinearLayout
+            android:id="@+id/add_zhanghu_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageButton
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back_btn"
+                android:background="#0000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:drawableBottom="@null"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新增账户"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/add_zhanghu_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="基本信息"
+
+        android:textSize="20dp"/>
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+
+            android:drawableLeft="@mipmap/circle"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="账户名称"
+            android:textSize="20sp"
+            android:textColor="#b4b4b4"
+            />
+        <EditText
+            android:background="@color/colorWhite"
+            android:layout_width="300dp"
+            android:id="@+id/add_zhanghu_zhanghuName"
+            android:layout_height="30dp"
+
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="170dp"
+            android:textSize="20sp"
+            android:textColor="#9c9c9c"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+
+            android:drawableLeft="@mipmap/circle"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="银行名称"
+            android:textSize="20sp"
+            android:textColor="#b4b4b4"
+            />
+        <EditText
+            android:background="@color/colorWhite"
+            android:layout_width="300dp"
+            android:id="@+id/add_zhanghu_yinhangName"
+            android:layout_height="30dp"
+
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="170dp"
+            android:textSize="20sp"
+            android:textColor="#9c9c9c"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+        <TextView
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/circle"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="银行账号"
+            android:textSize="20sp"
+            android:textColor="#b4b4b4"
+            />
+        <EditText
+            android:inputType="textMultiLine"
+            android:gravity="left|top"
+            android:background="@color/colorWhite"
+            android:layout_width="150dp"
+            android:id="@+id/add_zhanghu_yinhangzhanghao"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="170dp"
+            android:textSize="20sp"
+            android:textColor="#9c9c9c"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+
+            android:drawableLeft="@mipmap/circle"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="初期余额"
+            android:textSize="20sp"
+            android:textColor="#b4b4b4"
+            />
+        <EditText
+            android:background="@color/colorWhite"
+            android:layout_width="300dp"
+            android:id="@+id/add_zhanghu_chuqiyue"
+            android:layout_height="30dp"
+            android:inputType="number"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="170dp"
+            android:textSize="20sp"
+            android:textColor="#9c9c9c"/>
+
+    </RelativeLayout>
+
+
+
+
+
+    <!--
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="默认账户"
+            android:gravity="center_vertical"
+            android:textSize="22sp"
+            android:layout_marginLeft="20dp"
+            />
+        <Switch
+            android:id="@+id/add_zhanghu_idDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            />
+
+
+    </RelativeLayout>
+
+    -->
+
+
+    <EditText
+
+        android:paddingLeft="20dp"
+        android:id="@+id/add_zhanghu_remarksText"
+        android:hint="备注说明"
+        android:gravity="top"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+</LinearLayout>

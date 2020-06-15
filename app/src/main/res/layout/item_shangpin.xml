@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<swipedelete.view.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="#ffffff"
+    >
+
+    <!-- 第一个子view，显示ListView数据内容-->
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="?android:attr/selectableItemBackground"
+        >
+
+        <RelativeLayout
+            android:id="@+id/item_index_item"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="70dp">
+            <!--<ImageView-->
+                <!--android:id="@+id/listview_iv"-->
+                <!--android:layout_width="60dp"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:src="@mipmap/shop_icon"/>-->
+
+            <TextView
+                android:id="@+id/listview_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/listview_iv"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+
+                android:text="电风扇"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/listview_tvInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/listview_iv"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/listview_tv"
+                android:text="进货价"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#00d68e"
+                android:id="@+id/shangpinliebiao_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listview_tv"
+                android:layout_toRightOf="@+id/listview_tvInfo"
+                android:text="￥34.50"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_marginRight="20dp"
+            android:layout_width="10dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/backbtn_gry"
+            />
+    </LinearLayout>
+
+    <!-- 下面是侧滑菜单项 即：第2+个子view-->
+    <Button
+        android:id="@+id/btn_zd"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:background="#d9dee4"
+        android:text="置顶"
+        android:textColor="@android:color/white"/>
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:background="#F76E6B"
+        android:text="删除"
+        android:textColor="@android:color/white"/>
+    <Button
+        android:id="@+id/btn_print"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:background="#f7b66b"
+        android:text="打印\n标签"
+        android:textColor="@android:color/white"/>
+
+</swipedelete.view.SwipeMenuLayout>

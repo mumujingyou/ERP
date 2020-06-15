@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/qianbg"
+
+
+    >
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorTitle"
+        >
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageButton
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back_btn"
+                android:background="#0000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:drawableBottom="@null"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品库存"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"
+            android:textColor="#ffffff"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:id="@+id/item_index_item"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="110dp">
+            <ImageView
+                android:id="@+id/listview_iv"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/shop_icon"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/listview_iv"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+
+                android:text="电风扇"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/guige"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/listview_iv"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/name"
+                android:text="规格"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/norms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/guige"
+                android:layout_alignBottom="@+id/guige"
+                android:layout_alignLeft="@+id/property"
+                android:layout_alignStart="@+id/property"
+                android:text="盘亏"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/shuxing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/listview_iv"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/guige"
+                android:text="属性"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/property"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/guige"
+                android:layout_toRightOf="@+id/shuxing"
+                android:text="12个"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/danwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/listview_iv"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/shuxing"
+                android:text="单位"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shuxing"
+                android:layout_toRightOf="@+id/shuxing"
+                android:text="12个"
+                android:textSize="12sp" />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_marginLeft="20dp"
+
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="仓库"
+            android:textSize="20sp"
+            android:textColor="#b4b4b4"
+            />
+        <TextView
+
+            android:layout_width="300dp"
+            android:id="@+id/depotName"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="180dp"
+            android:textSize="20sp"
+            android:textColor="#9c9c9c"/>
+
+        <!--
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/backbtn_gry"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"/>
+        -->
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_marginLeft="20dp"
+
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="库存数量"
+            android:textSize="20sp"
+            android:textColor="#b4b4b4"
+            />
+        <TextView
+
+            android:layout_width="300dp"
+            android:id="@+id/kucunCount"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="180dp"
+            android:textSize="20sp"
+            android:textColor="#9c9c9c"/>
+
+    </RelativeLayout>
+
+    <!--
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_marginLeft="20dp"
+
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="期初库存量"
+            android:textSize="20sp"
+            android:textColor="#b4b4b4"
+            />
+        <TextView
+
+            android:layout_width="300dp"
+            android:id="@+id/qichukucunCount"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="180dp"
+            android:textSize="20sp"
+            android:textColor="#9c9c9c"/>
+
+    </RelativeLayout>
+      -->
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_marginLeft="20dp"
+
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="成本报价"
+            android:textSize="20sp"
+            android:textColor="#b4b4b4"
+            />
+        <TextView
+
+            android:layout_width="300dp"
+            android:id="@+id/chengbenjia"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="180dp"
+            android:textSize="20sp"
+            android:textColor="#9c9c9c"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_marginLeft="20dp"
+
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="库存总额"
+            android:textSize="20sp"
+            android:textColor="#b4b4b4"
+            />
+        <TextView
+
+            android:layout_width="300dp"
+            android:id="@+id/kucunzonge"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="180dp"
+            android:textSize="20sp"
+            android:textColor="#9c9c9c"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

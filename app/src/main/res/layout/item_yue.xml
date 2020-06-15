@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<swipedelete.view.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="#ffffff"
+    >
+
+
+        <RelativeLayout
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginBottom="3dp"
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="85dp">
+
+            <TextView
+                android:drawablePadding="5dp"
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:text="于禁"
+                android:textSize="20sp" />
+
+            <TextView
+                android:textColor="#c2c2c2"
+                android:id="@+id/listview_tvInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/name"
+                android:text="银行名称"
+                android:textSize="17sp" />
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_toRightOf="@+id/listview_tvInfo"
+                android:text="工商银行"
+                android:textColor="#818181"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:textColor="#c2c2c2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/listview_tvInfo"
+                android:text="银行账号"
+                android:textSize="17sp"
+                android:id="@+id/textView" />
+
+            <TextView
+
+                android:id="@+id/item_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView"
+                android:layout_alignBottom="@+id/textView"
+                android:layout_alignLeft="@+id/item_name"
+                android:layout_alignStart="@+id/item_name"
+                android:text="￥123455.00"
+                android:textColor="#818181"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:textColor="#c2c2c2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="150dp"
+                android:layout_below="@+id/name"
+                android:text="期初余额"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/item_count"
+                android:textColor="#c2c2c2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_below="@+id/name"
+                android:text="18845964324"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+
+
+    <!-- 下面是侧滑菜单项 即：第2+个子view-->
+    <Button
+        android:id="@+id/btn_zd"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="#d9dee4"
+        android:text="置顶"
+        android:textColor="@android:color/white"/>
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="#F76E6B"
+        android:text="删除"
+        android:textColor="@android:color/white"/>
+
+</swipedelete.view.SwipeMenuLayout>

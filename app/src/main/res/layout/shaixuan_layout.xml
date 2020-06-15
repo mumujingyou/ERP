@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/body"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_marginLeft="20dp"
+
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="仓库"
+            android:textSize="20sp"
+            android:textColor="#b4b4b4"
+            />
+        <TextView
+            android:text="全部"
+            android:layout_width="300dp"
+            android:id="@+id/depotName"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="180dp"
+            android:textSize="20sp"
+            android:textColor="#9c9c9c"/>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/backbtn_gry"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/colorGrey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </View>
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_marginLeft="20dp"
+
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="商品"
+            android:textSize="20sp"
+            android:textColor="#b4b4b4"
+            />
+        <TextView
+            android:text="全部"
+
+            android:layout_width="300dp"
+            android:id="@+id/shengpin"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="180dp"
+            android:textSize="20sp"
+            android:textColor="#9c9c9c"/>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/backbtn_gry"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/colorGrey"
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </View>
+
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_marginLeft="20dp"
+
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="显示零存库商品"
+            android:textSize="20sp"
+            android:textColor="#b4b4b4"
+            />
+
+        <Switch
+            android:thumb="@null"
+            android:track="@null"
+            android:background="@drawable/switch_selctor"
+            android:id="@+id/edit_cangku_isLock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/colorGrey"
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/clear"
+            android:background="@color/colorGrey"
+            android:textColor="@color/colorTitle"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="清空条件"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/finish"
+            android:background="@color/colorTitle"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="完成"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</LinearLayout>

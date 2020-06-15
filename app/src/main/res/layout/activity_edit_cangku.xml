@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/qianbg"
+
+
+    >
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorTitle"
+        >
+        <LinearLayout
+            android:id="@+id/edit_cangku_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageButton
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back_btn"
+                android:background="#0000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:drawableBottom="@null"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑仓库"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/edit_cangku_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="基本信息"
+
+        android:textSize="20dp"/>
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_marginLeft="20dp"
+
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="名称"
+            android:textSize="20sp"
+            android:textColor="#b4b4b4"
+            />
+        <EditText
+
+            android:layout_width="300dp"
+            android:id="@+id/edit_cangku_Name"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="130dp"
+            android:textSize="20sp"
+            android:textColor="#9c9c9c"/>
+
+    </RelativeLayout>
+
+
+<!--是否开启默认仓库
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="默认仓库"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#9d9d9d"
+            />
+        <Switch
+            android:id="@+id/add_cangku_idDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            />
+
+
+    </RelativeLayout>
+    -->
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="锁定仓库"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#9d9d9d"
+
+            />
+        <Switch
+            android:thumb="@null"
+            android:track="@null"
+            android:background="@drawable/switch_selctor"
+            android:id="@+id/edit_cangku_isLock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+    android:background="#ffffff"
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:layout_marginLeft="20dp"
+
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="地址"
+        android:textSize="20sp"
+        android:textColor="#b4b4b4"
+        />
+    <EditText
+        android:layout_width="300dp"
+
+        android:id="@+id/edit_cangku_address"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="130dp"
+        android:textSize="20sp"
+        android:textColor="#9c9c9c"/>
+
+</RelativeLayout>
+
+    <!--
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="备注"
+        android:textSize="20sp"
+        android:textColor="#949494"
+        android:layout_marginLeft="20dp"/>
+    <EditText
+        android:id="@+id/edit_cangku_remarks"
+        android:paddingLeft="20dp"
+        android:gravity="top"
+        android:text="无"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ffffff"
+        android:textSize="20sp"
+        />
+-->
+</LinearLayout>

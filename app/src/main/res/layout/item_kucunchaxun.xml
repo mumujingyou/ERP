@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    >
+
+    <!-- 第一个子view，显示ListView数据内容-->
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="?android:attr/selectableItemBackground"
+        >
+
+        <RelativeLayout
+            android:id="@+id/item_index_item"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp">
+            <ImageView
+                android:id="@+id/listview_iv"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/shop_icon"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/listview_iv"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+
+                android:text="电风扇"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/pandianzhuantai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/listview_iv"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/name"
+                android:text="库存数量"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_toRightOf="@+id/pandianzhuantai"
+                android:text="盘亏"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/zhangmianshuliang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/listview_iv"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/pandianzhuantai"
+                android:text="库存总额"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/totalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pandianzhuantai"
+                android:layout_toRightOf="@+id/zhangmianshuliang"
+                android:text="12个"
+                android:textSize="12sp" />
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

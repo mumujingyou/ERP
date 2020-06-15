@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/qianbg"
+    android:orientation="vertical"
+    tools:context="com.example.qunxin.erp.activity.KehuxiangqingActivity">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorTitle"
+        >
+        <LinearLayout
+            android:id="@+id/kehuxiangqing_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageButton
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back_btn"
+                android:background="#0000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:drawableBottom="@null"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="客户详情"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"
+            android:textColor="#ffffff"/>
+        <ImageView
+            android:id="@+id/kehuxiangqing_edit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/edit_pen"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_centerVertical="true"/>
+
+        <!--
+        <ImageView
+
+            android:layout_width="15dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/edit_btn"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"/>
+
+            -->
+    </RelativeLayout>
+
+    <TextView
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="基本信息"
+
+        android:textSize="20dp"/>
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_marginLeft="20dp"
+
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="客户名称"
+            android:textSize="20sp"
+            android:textColor="#b4b4b4"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/kehuxiangqing_kehumingcheng"
+            android:layout_height="wrap_content"
+            android:text="王先生"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="170dp"
+            android:textSize="20sp"
+            android:textColor="#9c9c9c"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_marginLeft="20dp"
+
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="联系人"
+            android:textSize="20sp"
+            android:textColor="#b4b4b4"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/kehuxiangqing_lianxiren"
+            android:layout_height="wrap_content"
+            android:text="王先生"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="170dp"
+            android:textSize="20sp"
+            android:textColor="#9c9c9c"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_marginLeft="20dp"
+
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="联系电话"
+            android:textSize="20sp"
+            android:textColor="#b4b4b4"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/kehuxiangqing_lianxidianhua"
+            android:layout_height="wrap_content"
+            android:text="18875964324"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="170dp"
+            android:textSize="20sp"
+            android:textColor="#9c9c9c"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_marginLeft="20dp"
+
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="编号"
+            android:textSize="20sp"
+            android:textColor="#b4b4b4"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/kehuxiangqing_bianhao"
+            android:layout_height="wrap_content"
+            android:text="无"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="170dp"
+            android:textSize="20sp"
+            android:textColor="#9c9c9c"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_marginLeft="20dp"
+
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="邮箱"
+            android:textSize="20sp"
+            android:textColor="#b4b4b4"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/kehuxiangqing_youxiang"
+            android:layout_height="wrap_content"
+            android:text="无"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="170dp"
+            android:textSize="20sp"
+            android:textColor="#9c9c9c"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_marginLeft="20dp"
+
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="传真"
+            android:textSize="20sp"
+            android:textColor="#b4b4b4"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/kehuxiangqing_chuanzhen"
+            android:layout_height="wrap_content"
+            android:text="无"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="170dp"
+            android:textSize="20sp"
+            android:textColor="#9c9c9c"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_marginLeft="20dp"
+
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="联系地址"
+            android:textSize="20sp"
+            android:textColor="#b4b4b4"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/kehuxiangqing_lianxidizhi"
+            android:layout_height="wrap_content"
+            android:text="无"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="170dp"
+            android:textSize="20sp"
+            android:textColor="#9c9c9c"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_marginLeft="20dp"
+
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="本公司负责人"
+            android:textSize="20sp"
+            android:textColor="#b4b4b4"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/kehuxiangqing_fuzeren"
+            android:layout_height="wrap_content"
+            android:text="无"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="170dp"
+            android:textSize="20sp"
+            android:textColor="#9c9c9c"/>
+
+    </RelativeLayout>
+
+    <!--
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_marginLeft="20dp"
+
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="期初欠款"
+            android:textSize="20sp"
+            android:textColor="#b4b4b4"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/kehuxiangqing_chuqiqiankuan"
+            android:layout_height="wrap_content"
+            android:text="无"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="170dp"
+            android:textSize="20sp"
+            android:textColor="#9c9c9c"/>
+
+    </RelativeLayout>
+
+    -->
+    <TextView
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="基本信息"
+
+        android:textSize="20dp"/>
+    <TextView
+        android:textSize="20sp"
+        android:paddingLeft="20dp"
+        android:text="hh"
+        android:id="@+id/remarksText"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorWhite"/>
+
+
+
+
+</LinearLayout>

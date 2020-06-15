@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2ededed"
+    >
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorTitle"
+        >
+        <LinearLayout
+            android:id="@+id/baseDatus_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageButton
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back_btn"
+                android:background="#0000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:drawableBottom="@null"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="基础资料"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品列表"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"/>
+    <include layout="@layout/basedatus_shangpinliebiao" android:id="@+id/shangpinliebiao"></include>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="首付款账户"
+        android:textSize="20sp"
+
+        android:layout_marginLeft="20dp"/>
+    <include layout="@layout/basedatus_jiesuanzhanghu" android:id="@+id/jiesuanzhanghu"></include>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="仓库管理"
+        android:textSize="20sp"
+
+        android:layout_marginLeft="20dp"/>
+    <include layout="@layout/basedatus_cangkuliebiao" android:id="@+id/cangkuliebiao"></include>
+
+    <!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="期初信息"
+        android:textSize="20sp"
+
+        android:layout_marginLeft="20dp"/>
+    <include layout="@layout/basedatus_qichuxinxi" android:id="@+id/qichuxinxi"></include>
+     -->
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

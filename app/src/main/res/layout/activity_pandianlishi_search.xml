@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/qianbg"
+    tools:context="com.example.qunxin.erp.activity.QichuyingshouqiankuanActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorTitle"
+        >
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/searchText"
+            android:imeOptions="actionSearch"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:hint="单号"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/toolbar_bottom"
+            android:textSize="15sp"
+            android:textColor="#303030"
+            android:drawableLeft="@mipmap/search"/>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </ListView>
+</LinearLayout>

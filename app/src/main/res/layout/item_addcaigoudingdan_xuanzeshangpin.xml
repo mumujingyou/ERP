@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/colorWhite"
+    >
+
+    <RelativeLayout
+        android:id="@+id/item_index_item"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="70dp">
+        <ImageView
+            android:id="@+id/listview_iv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/shop_icon"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/listview_iv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+
+            android:text="电风扇"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name"
+
+            android:layout_below="@+id/name"
+            android:text="￥34.50"
+            android:textColor="#00d68e"
+            android:textSize="12sp" />
+
+        <LinearLayout
+
+            android:layout_marginBottom="5dp"
+
+            android:layout_marginRight="10dp"
+
+            android:layout_width="100dp"
+
+            android:layout_height="30dp"
+
+            android:focusable="true"
+
+            android:divider="@drawable/divider"
+
+            android:background="@drawable/bg_amount_layout"
+
+            android:showDividers="middle"
+
+            android:orientation="horizontal"
+
+            android:layout_alignParentRight="true"
+
+            android:layout_alignParentBottom="true"
+
+            >
+
+            <Button
+
+                android:id="@+id/btnDecrease"
+
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+
+                android:gravity="center"
+
+                android:background="@drawable/btn_amount"
+
+                android:text="-"/>
+
+
+            <TextView
+                android:imeOptions="actionSend"
+
+
+                android:textColor="@color/colorTitle"
+
+                android:id="@+id/etAmount"
+
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+
+                android:layout_weight="1.5"
+
+                android:background="@null"
+
+                android:gravity="center"
+
+                android:inputType="number"
+
+                android:minWidth="60dp"
+
+                android:text="0" />
+
+
+
+            <Button
+
+                android:id="@+id/btnIncrease"
+
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+
+                android:gravity="center"
+
+                android:background="@drawable/btn_amount"
+
+                android:text="+"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

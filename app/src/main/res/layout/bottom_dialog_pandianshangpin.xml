@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_yuanjiaojuxing_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_index_item"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/listview_iv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/shop_icon"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/listview_iv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+
+            android:text="电风扇"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/listview_tvInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/listview_iv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/name"
+            android:text="账面数量"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#00d68e"
+            android:id="@+id/bookTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_toRightOf="@+id/listview_tvInfo"
+            android:text="￥34.50"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#9e9e9e"
+        />
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/danjiaText_qianmian"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="实际数量"
+            android:textSize="20sp"
+            android:textColor="#b4b4b4"
+            />
+        <EditText
+            android:inputType="number"
+            android:hint="请输入实际数量"
+            android:layout_width="300dp"
+            android:id="@+id/actualTotal"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="180dp"
+            android:textSize="20sp"
+            android:textColor="#9c9c9c"/>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#9e9e9e"
+        />
+
+    <Button
+        android:id="@+id/finish"
+        android:textSize="20sp"
+        android:text="完成"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorTitle"/>
+
+
+
+</LinearLayout>

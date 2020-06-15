@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_marginTop="5dp"
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorQian"
+    >
+
+    <RelativeLayout
+        android:id="@+id/item_index_item"
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/listview_iv"
+
+            android:text="电风扇"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/shichangjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name"
+            android:layout_below="@+id/name"
+
+            android:layout_marginTop="10dp"
+            android:text="市场价"
+
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:singleLine="true"
+            android:hint="请输入市场价"
+            android:inputType="number"
+            android:id="@+id/shichangjiaText"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/shichangjia"
+
+            android:layout_marginLeft="35dp"
+
+            android:layout_marginStart="35dp"
+            android:layout_toRightOf="@+id/shichangjia"
+            android:background="@drawable/border_yuanjiaojuxing_blue"
+            android:paddingLeft="5dp"
+            android:text=""
+             />
+
+        <TextView
+            android:id="@+id/chaigoujia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignLeft="@+id/shichangjia"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/shichangjia"
+            android:layout_marginBottom="11dp"
+            android:text="采购价"
+            android:textSize="15sp" />
+
+        <EditText
+            android:singleLine="true"
+            android:hint="请输入采购价"
+
+            android:inputType="number"
+
+            android:id="@+id/caigoujiaText"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+
+            android:layout_alignBottom="@+id/chaigoujia"
+            android:layout_alignLeft="@+id/shichangjiaText"
+            android:layout_alignStart="@+id/shichangjiaText"
+            android:background="@drawable/border_yuanjiaojuxing_blue"
+            android:paddingLeft="5dp"
+            android:text=""
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#9e9e9e"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:textSize="20sp"
+            android:text="采购数量"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#9e9e9e"
+            />
+        <TextView
+            android:textColor="@color/colorTitle"
+            android:background="@null"
+            android:id="@+id/caigouCount"
+            android:textSize="20sp"
+            android:text="100"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            />
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#9e9e9e"
+            />
+
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:textSize="20sp"
+            android:text="实际采购数量"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#9e9e9e"
+            />
+        <EditText
+            android:inputType="number"
+            android:singleLine="true"
+            android:background="@drawable/border_yuanjiaojuxing_blue"
+            android:textColor="@color/colorTitle"
+            android:id="@+id/shijicaigouCount"
+            android:textSize="20sp"
+            android:text="1"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#9e9e9e"
+        />
+
+
+
+
+
+
+</LinearLayout>

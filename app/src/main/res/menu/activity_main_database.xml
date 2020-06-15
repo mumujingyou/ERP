@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/gerenxinxi">
+        <item
+            app:itemBackground="?android:attr/selectableItemBackground"
+            android:enabled="true"
+            android:id="@+id/nav_personalInfo"
+            android:title="                            个人信息" />
+    </group>
+
+    <group android:id="@+id/sezhizhongxin">
+        <item
+            app:itemBackground="?android:attr/selectableItemBackground"
+            android:id="@+id/nav_settings"
+            android:title="                            设置中心" />
+
+    </group>
+
+    <group android:id="@+id/jihcuzhiliao" >
+        <item
+            app:itemBackground="?android:attr/selectableItemBackground"
+            android:id="@+id/nav_baseDatus"
+            android:title="                            基础资料" />
+    </group>
+</menu>

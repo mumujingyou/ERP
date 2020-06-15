@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<swipedelete.view.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="#ffffff"
+    >
+
+    <!-- 第一个子view，显示ListView数据内容-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="#ffffff"
+        >
+        <LinearLayout
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:background="?android:attr/selectableItemBackground"
+                android:foreground="@drawable/border_line_while4"
+                android:id="@+id/ll_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="55dp">
+                <ImageView
+                    android:id="@+id/listview_iv"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/caigou"/>
+
+                <TextView
+                    android:id="@+id/listview_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/listview_iv"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+
+                    android:text="采购历史"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/listview_tvInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/listview_iv"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/listview_tv"
+                    android:text="向供应商预定进货商品"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            <ImageButton
+                android:id="@+id/add"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+                android:foreground="@drawable/border_line_while4"
+                android:src="@mipmap/increase"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- 下面是侧滑菜单项 即：第2+个子view-->
+    <Button
+        android:id="@+id/btn_zd"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="#d9dee4"
+        android:text="置顶"
+        android:textColor="@android:color/white"/>
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="#F76E6B"
+        android:text="删除"
+        android:textColor="@android:color/white"/>
+
+</swipedelete.view.SwipeMenuLayout>

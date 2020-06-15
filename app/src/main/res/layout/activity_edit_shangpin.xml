@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2ededed"
+
+    >
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorTitle"
+        >
+        <LinearLayout
+            android:id="@+id/edit_shangpin_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageButton
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back_btn"
+                android:background="#0000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:drawableBottom="@null"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑商品"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/edit_shangpin_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/edit_shangpin_fenlei"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="商品分类"
+            android:textSize="20sp"
+            android:checked="true"
+            android:textColor="#b4b4b4"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/edit_shangpin_typeName"
+            android:layout_height="wrap_content"
+            android:text="默认分类"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="150dp"
+            android:textSize="20sp"
+            android:textColor="#b5b5b5"/>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/backbtn_gry"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/edit_shangpin_unit"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="单位"
+            android:textSize="20sp"
+            android:checked="true"
+            android:textColor="#b4b4b4"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/edit_shangpin_unitText"
+            android:layout_height="wrap_content"
+            android:text="请选择"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="150dp"
+            android:textSize="20sp"
+            android:textColor="#b5b5b5"/>
+        <ImageView
+            android:layout_marginRight="20dp"
+
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/backbtn_gry"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/edit_shangpin_guigeshuxing"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="规格属性"
+            android:textSize="20sp"
+            android:checked="true"
+            android:textColor="#b4b4b4"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/edit_shangpin_guigeshuxingText"
+            android:layout_height="wrap_content"
+            android:text="请选择"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="150dp"
+            android:textSize="20sp"
+            android:textColor="#b5b5b5"/>
+        <ImageView
+            android:layout_marginRight="20dp"
+
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/backbtn_gry"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="商品金额"
+            android:textSize="20sp"
+            android:checked="true"
+            android:textColor="#b4b4b4"
+            />
+        <EditText
+            android:id="@+id/edit_shangpin_priceText"
+            android:focusable="true"
+            android:inputType="number"
+            android:gravity="left"
+            android:layout_width="wrap_content"
+            android:background="@drawable/border_yuanjiaojuxing"
+            android:layout_height="wrap_content"
+            android:hint="请输入商品价格"
+            android:padding="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="150dp"
+            android:textSize="18sp"
+            android:textColor="#b5b5b5"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_shangpin_kucunyujing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:checked="true"
+            android:text="库存预警"
+            android:textColor="#b4b4b4"
+            android:textSize="20sp" />
+
+        <TextView
+
+            android:id="@+id/edit_shangpin_kucunyujingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="150dp"
+            android:background="#ffffff"
+            android:text="库存不足/挤压时提醒"
+            android:textColor="#b5b5b5"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/backbtn_gry" />
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/edit_shangpin_remarksText"
+        android:hint="备注说明"
+        android:gravity="top"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+</LinearLayout>

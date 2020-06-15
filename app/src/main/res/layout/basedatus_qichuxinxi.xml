@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="#ffffff"
+    >
+
+    <!-- 第一个子view，显示ListView数据内容-->
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:foreground="@drawable/border_line_while4"
+
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/qichuxinxi_item"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="70dp">
+            <ImageView
+                android:id="@+id/listview_iv"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/shangpinliebiao"/>
+
+            <TextView
+                android:id="@+id/listview_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/listview_iv"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+
+                android:text="期初信息"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/listview_tvInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/listview_iv"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/listview_tv"
+                android:text="商品名称\售价\规格\库存\分类"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
