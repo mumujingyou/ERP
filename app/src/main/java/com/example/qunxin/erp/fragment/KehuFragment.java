@@ -136,6 +136,8 @@ public class KehuFragment extends Fragment implements AbsListView.OnScrollListen
             JSONObject json = (JSONObject) map.get("json");
             try {
                 JSONObject jsonData = json.getJSONObject("data");
+                total=jsonData.getInt("total");
+
                 final JSONArray jsonArray = jsonData.getJSONArray("rows");
                 for (int i = 0; i < jsonArray.length(); i++) {
 
@@ -219,6 +221,7 @@ public class KehuFragment extends Fragment implements AbsListView.OnScrollListen
     RelativeLayout footView;
     CommonAdapter<KehuDatus> adapter = null;
 
+    int total=0;
     void loadView() {
 
         if (searchValue.equals("") == false) {
@@ -226,6 +229,10 @@ public class KehuFragment extends Fragment implements AbsListView.OnScrollListen
             removeBottomView();
         } else {
             addFootView();
+            if(lists.size()==total){
+                removeFootView();
+                addBottomView();
+            }
         }
 
         if (adapter == null) {
@@ -340,7 +347,7 @@ public class KehuFragment extends Fragment implements AbsListView.OnScrollListen
         super.onResume();
         removeFootView();
         removeBottomView();
-        addLoading();
+       // addLoading();
         if (AddKehuActivity.isLoad) {
             isLoad = true;
         }

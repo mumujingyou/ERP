@@ -92,6 +92,7 @@ public class GongyingshangFragment extends Fragment implements AbsListView.OnScr
 
         listView.setOnScrollListener(this);
 
+
         return view;
     }
 
@@ -99,6 +100,7 @@ public class GongyingshangFragment extends Fragment implements AbsListView.OnScr
     List<GongyingshangDatus> lists = new ArrayList<>();
     String searchValue = "";
 
+    int total=0;
     void loadModel(int index) {
 
         final String contentTypeList = "application/json";
@@ -116,6 +118,8 @@ public class GongyingshangFragment extends Fragment implements AbsListView.OnScr
             JSONObject json = (JSONObject) map.get("json");
             try {
                 JSONObject jsonData = json.getJSONObject("data");
+                total=jsonData.getInt("total");
+                Log.d("hhh", total+"");
                 final JSONArray jsonArray = jsonData.getJSONArray("rows");
                 for (int i = 0; i < jsonArray.length(); i++) {
                     JSONObject jsonObject = jsonArray.getJSONObject(i);
@@ -178,6 +182,10 @@ public class GongyingshangFragment extends Fragment implements AbsListView.OnScr
             removeBottomView();
         } else {
             addFootView();
+            if(lists.size()==total){
+                removeFootView();
+                addBottomView();
+            }
         }
 
         if (adapter == null) {
@@ -244,6 +252,7 @@ public class GongyingshangFragment extends Fragment implements AbsListView.OnScr
                 }
             };
             listView.setAdapter(adapter);
+
         }
     }
 
@@ -294,9 +303,9 @@ public class GongyingshangFragment extends Fragment implements AbsListView.OnScr
     public void onResume() {
         super.onResume();
 
-        removeFootView();
-        removeBottomView();
-        addLoading();
+//        removeFootView();
+//        removeBottomView();
+//        addLoading();
         if (AddGongyingshangActivity.isLoad) {
             isLoad = true;
         }
