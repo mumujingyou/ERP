@@ -101,6 +101,8 @@ public class DairukudanFragment extends Fragment implements AbsListView.OnScroll
 
             }
 
+
+
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
 
